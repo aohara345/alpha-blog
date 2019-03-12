@@ -1,0 +1,55 @@
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+nav .nav-wrapper {
+  background-color: #2196f3
+}
+
+nav .brand-logo {
+  padding-left: 15px;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 20%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.profile {
+    padding-top: 48px;
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 128px;
+}
+
+.profile-name {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.profile-deatils {
+    font-size: 16pt;
+}
+
+.form-wrapper {
+  padding: 24px;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-wrapper button {
+  float: right;
+}
