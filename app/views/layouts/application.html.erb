@@ -9,6 +9,12 @@
   </head>
 
   <body>
+    <% flash.each do |name, msg| %>
+      <ul>
+        <li><%= msg %></li>
+      </ul>
+    <% end %>
+
     <nav>
       <div class="nav-wrapper">
         <%= link_to root_path, class: "brand-logo" do %>
