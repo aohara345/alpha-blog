@@ -4,37 +4,20 @@
     <title>AlphaBlog</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <% flash.each do |name, msg| %>
-      <ul>
-        <li><%= msg %></li>
-      </ul>
-    <% end %>
+    <%= render 'layouts/messages' %>
+    <%= render 'layouts/nav' %>
+    <%= render 'layouts/sidenav' %>
 
-    <nav>
-      <div class="nav-wrapper">
-        <%= link_to root_path, class: "brand-logo" do %>
-            <i class="material-icons">all_inclusive</i>
-        <% end %>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><%= link_to 'About', about_path %></li>
-          <li><a href="https://www.facebook.com/profile.php?id=10044537" target="_blank">Facebook</a></li>
-          <li><a href="https://www.linkedin.com/in/andrew-o-hara-2204b07/" target="_blank">Linkedin</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="app-wrapper">
+      <%= yield %>
+    </div>
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'About', about_path %></li>
-      <li><a href="https://www.facebook.com/profile.php?id=10044537" target="_blank">Facebook</a></li>
-      <li><a href="https://www.linkedin.com/in/andrew-o-hara-2204b07/" target="_blank">Linkedin</a></li>
-    </ul>
-    <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
+
 </html>
