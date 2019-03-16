@@ -3,10 +3,10 @@
   <head>
     <title>AlphaBlog</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   <body>
     <%= render 'layouts/messages' %>
@@ -19,5 +19,8 @@
 
     <%= render 'layouts/footer' %>
   </body>
+
+  <!-- Is this a problem to have the javascript tag in the head and after the body? -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 </html>

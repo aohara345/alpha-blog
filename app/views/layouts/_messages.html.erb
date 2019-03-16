@@ -1,5 +1,5 @@
 <% flash.each do |name, msg| %>
-  <ul>
-    <li><%= msg %></li>
-  </ul>
+  <script>
+    M.toast({html: '<%= msg %>', classes: 'rounded'})
+  </script>
 <% end %>
