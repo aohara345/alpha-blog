@@ -13,6 +13,7 @@
 
 
 //= require jquery
+//= require bootstrap-sprockets
 //= require materialize
 //= require rails-ujs
 //= require turbolinks
