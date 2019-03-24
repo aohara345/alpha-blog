@@ -12,11 +12,9 @@ gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sassc-rails', '>= 2.1.0'
 # Use Bootstrap
 gem 'bootstrap-sass', '~> 3.4.1'
-# Use Materialize
-gem 'materialize-sass', '~> 1.0.0'
 # Use jQuery
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # Use Uglifier as compressor for JavaScript assets

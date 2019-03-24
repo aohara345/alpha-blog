@@ -2,25 +2,13 @@
 <html>
   <head>
     <title>AlphaBlog</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
   </head>
-
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   <body>
+    <%= render 'layouts/navigation' %>
     <%= render 'layouts/messages' %>
-    <%= render 'layouts/nav' %>
-    <%= render 'layouts/sidenav' %>
-
-    <div class="app-wrapper">
-      <%= yield %>
-    </div>
-
-    <%= render 'layouts/footer' %>
+    <%= yield %>
   </body>
-
-  <!-- Is this a problem to have the javascript tag in the head and after the body? -->
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
 </html>
