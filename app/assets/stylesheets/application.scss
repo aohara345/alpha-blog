@@ -55,6 +55,10 @@ $navbar-default-bg: #4688F1;
   padding-top: 10px;
 }
 
+.article-meta-details {
+  margin-top: 15px;
+}
+
 .description {
   margin-top: 0;
 }
@@ -67,7 +71,7 @@ $navbar-default-bg: #4688F1;
 .article-body {
   border-top: 1px solid #eaeaea;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .footer {
