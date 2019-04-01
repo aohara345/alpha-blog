@@ -1,0 +1,23 @@
+<!-- Universal chart colors can be found in config/initializers/chartkick.rb -->
+
+<div class="chart">
+  <h4>Users Created by Day</h4>
+  <%= line_chart User.group_by_day(:created_at).count %>
+</div>
+
+<div class="chart">
+  <h4>Articles Created by Day</h4>
+  <%= line_chart Article.group_by_day(:created_at).count %>
+</div>
+
+<div class="chart">
+  <h4>Articles Created by Day of Week</h4>
+  <%= column_chart Article.group_by_day_of_week(:created_at, format: "%a").count %>
+</div>
+
+<!--
+<div class="chart">
+  <h4>Articles Created by User</h4>
+  <%= bar_chart Article.group(:user).count %>
+</div>
+ -->
