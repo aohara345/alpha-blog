@@ -24,6 +24,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'chartkick'
 # Use Groupdate for date grouping (works with Chartkick)
 gem 'groupdate'
+# Use Forest Admin
+gem 'forest_liana'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
