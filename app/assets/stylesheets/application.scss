@@ -79,6 +79,17 @@ $navbar-default-bg: #009688;
   padding-left: 0;
 }
 
+.badge {
+  background-color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.input_checkbox {
+  width: auto !important;
+}
+
 .chart {
   padding-top: 25px;
   padding-bottom: 25px;
